@@ -1,0 +1,56 @@
+## Blacklist files/folders in same directory as the .gitignore file
+/*
+
+## Whitelist some files
+!.gitignore
+!.gitmodules
+!*.md
+!*.adoc
+!*.yml
+!*.sh
+!*.txt
+!*.py
+!*.cfg
+!*.example
+!*.toml
+!LICENSE*
+
+!pragnodejs/
+!docs/
+# !_site/
+
+## Blacklist some specific files in the white
+**/*~
+**/*.swp
+**/nohup.*
+**/*.log
+**/*bk
+**/temp.*
+**/*.local.*
+**/README.html
+**/node_modules
+**/*.pyc
+**/*__pycache__
+**/*.ipynb_checkpoints
+**/*.pytest_cache
+**/*.py.*
+# **/*.mp4
+# **/*.mp3
+
+**/.gradle
+**/.idea
+**/.externalNativeBuild
+**/gradle
+**/captures
+**/screenshot
+**/*.iml
+**/.DS_Store
+**/.gradle
+**/.idea
+**/.externalNativeBuild
+
+**/build
+**/dist
+**/bin
+**/*.egg-info
+**/*.egg

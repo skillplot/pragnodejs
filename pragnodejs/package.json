@@ -1,0 +1,30 @@
+{
+  "name": "pragmatic-nodejs",
+  "version": "1.0.0",
+  "description": "Codebase for Pragmatic nodejs book from pragmatic python book series. An opinionated nodejs practical tutorials.",
+  "main": "web_server_hello.js",
+  "repository": "https://github.com/skillplot/pragmatic-nodejs",
+  "author": "skillplot",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6",
+    "nodemon": "^2.0.4",
+    "pm2": "^4.4.1",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-hello": "nodemon web_server_hello.js --exec babel-node --presets babel-preset-env",
+    "start-stream": "nodemon web_server_stream.js --exec babel-node --presets babel-preset-env",
+    "lint": "eslint src/js"
+  }
+}
