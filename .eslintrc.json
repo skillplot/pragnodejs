@@ -1,0 +1,79 @@
+{
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:eslint-plugin/recommended",
+    "plugin:import/recommended"],
+  // add your environment below the extends key, like this:
+  "env": {
+    "es6": true,
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "plugins": ["import","eslint-plugin"],
+  "parserOptions": {
+      "ecmaVersion": 8
+  },
+  "rules": {
+    "no-underscore-dangle": 0,
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "always-multiline"
+  }],
+    "comma-style": [2, "last"],
+    "curly": [2, "multi-line"],
+    "eol-last": [2, "always"],
+    "eqeqeq": [2, "allow-null"],
+    "func-call-spacing": 2,
+    "indent": [2, 2],
+    "keyword-spacing": ["error", {
+      "before": true,
+      "after": true,
+      "overrides": {
+        "return": { "after": true },
+        "throw": { "after": true },
+        "case": { "after": true }
+      }
+    }],
+    "max-len": ["error", 120, 2, { "ignoreComments": true }],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-cond-assign": [2, "always"],
+    "no-return-assign": [2, "always"],
+    "no-var": 2,
+    "object-curly-spacing": [2, "always"],
+    "object-shorthand": ["error", "always", {
+        "ignoreConstructors": false,
+        "avoidQuotes": true
+    }],
+    "one-var": [2, "never"],
+    "prefer-const": 2,
+    "quotes": [2, "single", {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+    }],
+    "semi": [2, "always"],
+    "space-before-function-paren": ["error", {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+    }],
+    "eslint-plugin/consistent-output": [
+        "error",
+        "always"
+    ],
+    "eslint-plugin/meta-property-ordering": "error",
+    "eslint-plugin/no-deprecated-context-methods": "error",
+    "eslint-plugin/no-deprecated-report-api": "off",
+    "eslint-plugin/prefer-replace-text": "error",
+    "eslint-plugin/report-message-format": "error",
+    "eslint-plugin/require-meta-schema": "error",
+    "eslint-plugin/require-meta-type": "error",
+    "import/prefer-default-export": "off",
+    "import/extensions" : "off"
+    // "import/no-extraneous-dependencies": "off",
+  }
+}
