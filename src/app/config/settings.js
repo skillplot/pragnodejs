@@ -1,5 +1,5 @@
-module.exports = {
-  "port": 8000
+const appcfg = {
+  "port": 8001
   ,"jwt_secret": "myS33!!creeeT"
   ,"jwt_expiration_in_seconds": 36000
   ,"project_name": "pragmatic-nodejs"
@@ -20,3 +20,5 @@ module.exports = {
   ,"first_superuser_password": null
   ,"users_open_registration": false
 };
+
+export default appcfg;

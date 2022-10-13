@@ -6,6 +6,7 @@
   "contributors": [
     "skillplot"
   ],
+  "type": "module",
   "main": "src/index.js",
   "exports": {},
   "files": [
@@ -22,6 +23,8 @@
     "eslint:fix": "eslint --fix .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-hello": "nodemon src/web_server_hello.js --exec babel-node --presets babel-preset-env",
+    "start-ws-server": "nodemon src/ws_server.js --exec babel-node --presets babel-preset-env",
+    "start-ws-client": "nodemon src/ws_client.js --exec babel-node --presets babel-preset-env",
     "start-stream": "nodemon src/web_server_stream.js --exec babel-node --presets babel-preset-env",
     "lint": "eslint src/js"
   },

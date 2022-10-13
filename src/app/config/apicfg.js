@@ -1,4 +1,4 @@
-module.exports = {
+const apicfg = {
   "API_BASE_VERSION": "v3"
   ,"API_BASE_URL": "/api/v3"
   ,"WEB_APP_NAME": "pragmatic-nodejs"
@@ -26,4 +26,6 @@ module.exports = {
   ]
   ,"ALLOWED_VIDEO_TYPE": ['.mp4']
   ,"FILE_DELIMITER": ";"
-}
+};
+
+export default apicfg;
