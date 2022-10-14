@@ -54,3 +54,11 @@ Mini projects are more the toy examples and can be thought of small tools that c
   ```bash
   bash start-stream.sh
   ```
+
+
+## References
+
+* https://www.npmjs.com/package/opencv4nodejs#how-to-install
+* https://github.com/narenltk/opencv4nodejs_webcam/blob/main/server.js
+* https://medium.com/swlh/video-streaming-using-opencv4nodejs-with-node-js-express-and-socket-io-3806abb049a
+* https://stackoverflow.com/questions/35604730/nodejs-express-error-failed-to-lookup-view-error-in-views-directory

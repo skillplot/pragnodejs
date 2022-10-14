@@ -37,6 +37,19 @@ ws.on('message', function message(data) {
   // ws.send(JSON.stringify(data));
 });
 
+// ws.on("stream", function(data) {
+//   console.log(`${data}`);
+//   if (data.frame) {
+//     var img = new Image();
+//     const src = 'data:image/jpeg;base64,' + data.frame.buffer;
+//   }
+// });
+
+
+ws.on('stream', async (data) => {
+    const buffer = Buffer.from(data.frame, 'base64');
+    await fs.writeFile('logs', buffer).catch(console.error); // fs.promises
+});
 
 ws.on('open', heartbeat);
 ws.on('ping', heartbeat);

@@ -1,10 +1,9 @@
-// ## Copyright (c) 2020 mangalbhaskar. All Rights Reserved.
+// ## Copyright (c) 2022 mangalbhaskar. All Rights Reserved.
 const __author__ = 'mangalbhaskar'
 
-// const port = 8000;
-const appcfg = require('./app/config/settings');
+import express from 'express';
+import appcfg from './app/config/settings.js';
 
-const express = require('express');
 var app = express();
 
 
